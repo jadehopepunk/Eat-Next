@@ -23,14 +23,14 @@
 		44EF3B5B137F42F600E7DEEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44EF3B5D137F42F600E7DEEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44EF3B5F137F42F600E7DEEE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		44EF3B63137F42F600E7DEEE /* Eat Next-Info.plist */ = {isa = PBXFileReference; path = "Eat Next-Info.plist"; sourceTree = "<group>"; };
+		44EF3B63137F42F600E7DEEE /* Eat Next-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eat Next-Info.plist"; sourceTree = "<group>"; };
 		44EF3B65137F42F600E7DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		44EF3B67137F42F600E7DEEE /* Eat Next-Prefix.pch */ = {isa = PBXFileReference; path = "Eat Next-Prefix.pch"; sourceTree = "<group>"; };
+		44EF3B67137F42F600E7DEEE /* Eat Next-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eat Next-Prefix.pch"; sourceTree = "<group>"; };
 		44EF3B68137F42F600E7DEEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44EF3B6A137F42F600E7DEEE /* Eat_NextAppDelegate.h */ = {isa = PBXFileReference; path = Eat_NextAppDelegate.h; sourceTree = "<group>"; };
+		44EF3B6A137F42F600E7DEEE /* Eat_NextAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat_NextAppDelegate.h; sourceTree = "<group>"; };
 		44EF3B6B137F42F600E7DEEE /* Eat_NextAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eat_NextAppDelegate.m; sourceTree = "<group>"; };
 		44EF3B6E137F42F600E7DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		44EF3B70137F42F600E7DEEE /* Eat_NextViewController.h */ = {isa = PBXFileReference; path = Eat_NextViewController.h; sourceTree = "<group>"; };
+		44EF3B70137F42F600E7DEEE /* Eat_NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat_NextViewController.h; sourceTree = "<group>"; };
 		44EF3B71137F42F600E7DEEE /* Eat_NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eat_NextViewController.m; sourceTree = "<group>"; };
 		44EF3B74137F42F600E7DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Eat_NextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
