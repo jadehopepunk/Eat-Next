@@ -11,5 +11,6 @@
 @interface Eat_NextViewController : UIViewController {
     
 }
+- (IBAction)addFoodClicked:(id)sender;
 
 @end

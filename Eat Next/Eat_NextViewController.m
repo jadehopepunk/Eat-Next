@@ -46,4 +46,7 @@
     return YES;
 }
 
+- (IBAction)addFoodClicked:(id)sender {
+    NSLog(@"add food button pressed");
+}
 @end
