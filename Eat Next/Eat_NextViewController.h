@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface Eat_NextViewController : UIViewController {
-    
+    UIPopoverController *popoverController;
+    IBOutlet UIButton *addFoodButton;
 }
+@property (nonatomic, retain) UIPopoverController *popoverController;
 - (IBAction)addFoodClicked:(id)sender;
 
 @end

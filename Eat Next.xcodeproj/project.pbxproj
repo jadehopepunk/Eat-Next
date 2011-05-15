@@ -13,6 +13,8 @@
 		440D8856137F528200006BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 440D8854137F528200006BBD /* InfoPlist.strings */; };
 		440D8859137F528200006BBD /* Unit_Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 440D8858137F528200006BBD /* Unit_Tests.h */; };
 		440D885B137F528200006BBD /* Unit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D885A137F528200006BBD /* Unit_Tests.m */; };
+		44AFE2B9137F790500A7640E /* AddFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AFE2B7137F790400A7640E /* AddFoodViewController.m */; };
+		44AFE2BA137F790500A7640E /* AddFoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44AFE2B8137F790500A7640E /* AddFoodViewController.xib */; };
 		44EF3B5C137F42F600E7DEEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5B137F42F600E7DEEE /* UIKit.framework */; };
 		44EF3B5E137F42F600E7DEEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5D137F42F600E7DEEE /* Foundation.framework */; };
 		44EF3B60137F42F600E7DEEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5F137F42F600E7DEEE /* CoreGraphics.framework */; };
@@ -31,6 +33,9 @@
 		440D8857137F528200006BBD /* Unit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unit Tests-Prefix.pch"; sourceTree = "<group>"; };
 		440D8858137F528200006BBD /* Unit_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unit_Tests.h; sourceTree = "<group>"; };
 		440D885A137F528200006BBD /* Unit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Tests.m; sourceTree = "<group>"; };
+		44AFE2B6137F790400A7640E /* AddFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddFoodViewController.h; path = ../AddFoodViewController.h; sourceTree = "<group>"; };
+		44AFE2B7137F790400A7640E /* AddFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFoodViewController.m; path = ../AddFoodViewController.m; sourceTree = "<group>"; };
+		44AFE2B8137F790500A7640E /* AddFoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddFoodViewController.xib; path = ../AddFoodViewController.xib; sourceTree = "<group>"; };
 		44EF3B57137F42F600E7DEEE /* Eat Next.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eat Next.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EF3B5B137F42F600E7DEEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44EF3B5D137F42F600E7DEEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +128,9 @@
 		44EF3B61137F42F600E7DEEE /* Eat Next */ = {
 			isa = PBXGroup;
 			children = (
+				44AFE2B6137F790400A7640E /* AddFoodViewController.h */,
+				44AFE2B7137F790400A7640E /* AddFoodViewController.m */,
+				44AFE2B8137F790500A7640E /* AddFoodViewController.xib */,
 				44EF3B6A137F42F600E7DEEE /* Eat_NextAppDelegate.h */,
 				44EF3B6B137F42F600E7DEEE /* Eat_NextAppDelegate.m */,
 				44EF3B6D137F42F600E7DEEE /* MainWindow.xib */,
@@ -223,6 +231,7 @@
 				44EF3B66137F42F600E7DEEE /* InfoPlist.strings in Resources */,
 				44EF3B6F137F42F600E7DEEE /* MainWindow.xib in Resources */,
 				44EF3B75137F42F600E7DEEE /* Eat_NextViewController.xib in Resources */,
+				44AFE2BA137F790500A7640E /* AddFoodViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 				44EF3B69137F42F600E7DEEE /* main.m in Sources */,
 				44EF3B6C137F42F600E7DEEE /* Eat_NextAppDelegate.m in Sources */,
 				44EF3B72137F42F600E7DEEE /* Eat_NextViewController.m in Sources */,
+				44AFE2B9137F790500A7640E /* AddFoodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +425,7 @@
 				440D885D137F528200006BBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44EF3B51137F42F600E7DEEE /* Build configuration list for PBXProject "Eat Next" */ = {
 			isa = XCConfigurationList;
