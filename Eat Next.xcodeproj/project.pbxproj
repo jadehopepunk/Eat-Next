@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440D884E137F528200006BBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5B137F42F600E7DEEE /* UIKit.framework */; };
+		440D884F137F528200006BBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5D137F42F600E7DEEE /* Foundation.framework */; };
+		440D8850137F528200006BBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5F137F42F600E7DEEE /* CoreGraphics.framework */; };
+		440D8856137F528200006BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 440D8854137F528200006BBD /* InfoPlist.strings */; };
+		440D8859137F528200006BBD /* Unit_Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 440D8858137F528200006BBD /* Unit_Tests.h */; };
+		440D885B137F528200006BBD /* Unit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D885A137F528200006BBD /* Unit_Tests.m */; };
 		44EF3B5C137F42F600E7DEEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5B137F42F600E7DEEE /* UIKit.framework */; };
 		44EF3B5E137F42F600E7DEEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5D137F42F600E7DEEE /* Foundation.framework */; };
 		44EF3B60137F42F600E7DEEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5F137F42F600E7DEEE /* CoreGraphics.framework */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440D884D137F528200006BBD /* Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		440D8853137F528200006BBD /* Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
+		440D8855137F528200006BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		440D8857137F528200006BBD /* Unit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unit Tests-Prefix.pch"; sourceTree = "<group>"; };
+		440D8858137F528200006BBD /* Unit_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unit_Tests.h; sourceTree = "<group>"; };
+		440D885A137F528200006BBD /* Unit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Tests.m; sourceTree = "<group>"; };
 		44EF3B57137F42F600E7DEEE /* Eat Next.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eat Next.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EF3B5B137F42F600E7DEEE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44EF3B5D137F42F600E7DEEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +48,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		440D8849137F528200006BBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440D884E137F528200006BBD /* UIKit.framework in Frameworks */,
+				440D884F137F528200006BBD /* Foundation.framework in Frameworks */,
+				440D8850137F528200006BBD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44EF3B54137F42F600E7DEEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440D8851137F528200006BBD /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				440D8858137F528200006BBD /* Unit_Tests.h */,
+				440D885A137F528200006BBD /* Unit_Tests.m */,
+				440D8852137F528200006BBD /* Supporting Files */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		440D8852137F528200006BBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				440D8853137F528200006BBD /* Unit Tests-Info.plist */,
+				440D8854137F528200006BBD /* InfoPlist.strings */,
+				440D8857137F528200006BBD /* Unit Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		44EF3B4C137F42F600E7DEEE = {
 			isa = PBXGroup;
 			children = (
 				44EF3B61137F42F600E7DEEE /* Eat Next */,
+				440D8851137F528200006BBD /* Unit Tests */,
 				44EF3B5A137F42F600E7DEEE /* Frameworks */,
 				44EF3B58137F42F600E7DEEE /* Products */,
 			);
@@ -62,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				44EF3B57137F42F600E7DEEE /* Eat Next.app */,
+				440D884D137F528200006BBD /* Unit Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +148,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		440D884C137F528200006BBD /* Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 440D885E137F528200006BBD /* Build configuration list for PBXNativeTarget "Unit Tests" */;
+			buildPhases = (
+				440D8848137F528200006BBD /* Sources */,
+				440D8849137F528200006BBD /* Frameworks */,
+				440D884A137F528200006BBD /* Resources */,
+				440D884B137F528200006BBD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Unit Tests";
+			productName = "Unit Tests";
+			productReference = 440D884D137F528200006BBD /* Unit Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		44EF3B56137F42F600E7DEEE /* Eat Next */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44EF3B78137F42F600E7DEEE /* Build configuration list for PBXNativeTarget "Eat Next" */;
@@ -139,11 +201,21 @@
 			projectRoot = "";
 			targets = (
 				44EF3B56137F42F600E7DEEE /* Eat Next */,
+				440D884C137F528200006BBD /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		440D884A137F528200006BBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440D8856137F528200006BBD /* InfoPlist.strings in Resources */,
+				440D8859137F528200006BBD /* Unit_Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44EF3B55137F42F600E7DEEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,7 +228,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		440D884B137F528200006BBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		440D8848137F528200006BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440D885B137F528200006BBD /* Unit_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44EF3B53137F42F600E7DEEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +266,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		440D8854137F528200006BBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				440D8855137F528200006BBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		44EF3B64137F42F600E7DEEE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -197,6 +301,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		440D885C137F528200006BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unit Tests/Unit Tests-Prefix.pch";
+				INFOPLIST_FILE = "Unit Tests/Unit Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		440D885D137F528200006BBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unit Tests/Unit Tests-Prefix.pch";
+				INFOPLIST_FILE = "Unit Tests/Unit Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		44EF3B76137F42F600E7DEEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -262,6 +408,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		440D885E137F528200006BBD /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440D885C137F528200006BBD /* Debug */,
+				440D885D137F528200006BBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		44EF3B51137F42F600E7DEEE /* Build configuration list for PBXProject "Eat Next" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -278,6 +432,7 @@
 				44EF3B7A137F42F600E7DEEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -3,7 +3,7 @@
 //  Eat Next
 //
 //  Created by Craig Ambrose on 15/05/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Craig Ambrose Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

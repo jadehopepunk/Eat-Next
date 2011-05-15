@@ -1,14 +1,16 @@
 //
-//  Eat_NextViewController.h
-//  Eat Next
+//  Unit_Tests.h
+//  Unit Tests
 //
 //  Created by Craig Ambrose on 15/05/11.
 //  Copyright 2011 Craig Ambrose Ltd. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface Eat_NextViewController : UIViewController {
+
+@interface Unit_Tests : SenTestCase {
+@private
     
 }
 
