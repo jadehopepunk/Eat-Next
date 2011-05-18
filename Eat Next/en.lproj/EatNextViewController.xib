@@ -94,7 +94,7 @@
 					<object class="IBUITableView" id="7043058">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{20, 124}, {728, 490}}</string>
+						<string key="NSFrame">{{20, 124}, {728, 827}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="1051162104">
 							<int key="NSColorSpace">3</int>
@@ -182,6 +182,14 @@
 					</object>
 					<int key="connectionID">11</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">foodTable</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="7043058"/>
+					</object>
+					<int key="connectionID">12</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -209,9 +217,9 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="130691600"/>
-							<reference ref="7043058"/>
 							<reference ref="651632680"/>
 							<reference ref="443065113"/>
+							<reference ref="7043058"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -252,7 +260,7 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>Eat_NextViewController</string>
+					<string>EatNextViewController</string>
 					<string>UIResponder</string>
 					<string>{{513, 0}, {783, 856}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -274,7 +282,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">11</int>
+			<int key="maxID">12</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

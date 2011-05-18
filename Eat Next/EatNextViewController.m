@@ -1,22 +1,24 @@
 //
-//  Eat_NextViewController.m
+//  EatNextViewController.m
 //  Eat Next
 //
 //  Created by Craig Ambrose on 15/05/11.
 //  Copyright 2011 Craig Ambrose Ltd. All rights reserved.
 //
 
-#import "Eat_NextViewController.h"
+#import "EatNextViewController.h"
 #import "AddFoodViewController.h"
 
-@implementation Eat_NextViewController
+@implementation EatNextViewController
 
 @synthesize popoverController;
+@synthesize foodDataSource;
 
 - (void)dealloc
 {
     [addFoodButton release];
     [popoverController release];
+    [foodTable release];
     [super dealloc];
 }
 
@@ -30,20 +32,19 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    foodDataSource = [[EatThisWeekDataSource alloc] init];
+    foodTable.dataSource = foodDataSource;
 }
-*/
 
 - (void)viewDidUnload
 {
-    [addFoodButton release];
-    addFoodButton = nil;
-    [popoverController release];
-    popoverController = nil;
+    [addFoodButton release]; addFoodButton = nil;
+    [popoverController release]; popoverController = nil;
+    [foodTable release]; foodTable = nil;
+    [foodDataSource release]; foodDataSource = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -56,20 +57,17 @@
 }
 
 - (IBAction)addFoodClicked:(id)sender {
-    NSLog(@"add food button pressed");
-    
     AddFoodViewController* content = [[AddFoodViewController alloc] init];
     UIPopoverController* aPopover = [[UIPopoverController alloc]
                                      initWithContentViewController:content];
-//    aPopover.delegate = self;
     [content release];
     
-    // Store the popover in a custom property for later use.
     self.popoverController = aPopover;
     [aPopover release];
     
     [self.popoverController setPopoverContentSize:CGSizeMake(320, 320)];
-    [self.popoverController presentPopoverFromRect:addFoodButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES]; 
-    
+    [self.popoverController presentPopoverFromRect:addFoodButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];     
 }
+
+
 @end

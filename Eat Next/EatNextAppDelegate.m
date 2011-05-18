@@ -6,11 +6,11 @@
 //  Copyright 2011 Craig Ambrose Ltd. All rights reserved.
 //
 
-#import "Eat_NextAppDelegate.h"
+#import "EatNextAppDelegate.h"
 
-#import "Eat_NextViewController.h"
+#import "EatNextViewController.h"
 
-@implementation Eat_NextAppDelegate
+@implementation EatNextAppDelegate
 
 
 @synthesize window=_window;

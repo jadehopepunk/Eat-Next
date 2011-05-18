@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@class Eat_NextViewController;
+@class EatNextViewController;
 
-@interface Eat_NextAppDelegate : NSObject <UIApplicationDelegate> {
+@interface EatNextAppDelegate : NSObject <UIApplicationDelegate> {
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet Eat_NextViewController *viewController;
+@property (nonatomic, retain) IBOutlet EatNextViewController *viewController;
 
 @end

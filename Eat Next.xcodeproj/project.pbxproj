@@ -13,6 +13,8 @@
 		440D8856137F528200006BBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 440D8854137F528200006BBD /* InfoPlist.strings */; };
 		440D8859137F528200006BBD /* Unit_Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 440D8858137F528200006BBD /* Unit_Tests.h */; };
 		440D885B137F528200006BBD /* Unit_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D885A137F528200006BBD /* Unit_Tests.m */; };
+		447EFF781383BA66001811E6 /* EatThisWeekDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 447EFF771383BA66001811E6 /* EatThisWeekDataSource.m */; };
+		447EFF791383BA66001811E6 /* EatThisWeekDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 447EFF771383BA66001811E6 /* EatThisWeekDataSource.m */; };
 		44AFE2B9137F790500A7640E /* AddFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AFE2B7137F790400A7640E /* AddFoodViewController.m */; };
 		44AFE2BA137F790500A7640E /* AddFoodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44AFE2B8137F790500A7640E /* AddFoodViewController.xib */; };
 		44EF3B5C137F42F600E7DEEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5B137F42F600E7DEEE /* UIKit.framework */; };
@@ -20,10 +22,10 @@
 		44EF3B60137F42F600E7DEEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EF3B5F137F42F600E7DEEE /* CoreGraphics.framework */; };
 		44EF3B66137F42F600E7DEEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44EF3B64137F42F600E7DEEE /* InfoPlist.strings */; };
 		44EF3B69137F42F600E7DEEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EF3B68137F42F600E7DEEE /* main.m */; };
-		44EF3B6C137F42F600E7DEEE /* Eat_NextAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EF3B6B137F42F600E7DEEE /* Eat_NextAppDelegate.m */; };
+		44EF3B6C137F42F600E7DEEE /* EatNextAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EF3B6B137F42F600E7DEEE /* EatNextAppDelegate.m */; };
 		44EF3B6F137F42F600E7DEEE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44EF3B6D137F42F600E7DEEE /* MainWindow.xib */; };
-		44EF3B72137F42F600E7DEEE /* Eat_NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EF3B71137F42F600E7DEEE /* Eat_NextViewController.m */; };
-		44EF3B75137F42F600E7DEEE /* Eat_NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44EF3B73137F42F600E7DEEE /* Eat_NextViewController.xib */; };
+		44EF3B72137F42F600E7DEEE /* EatNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44EF3B71137F42F600E7DEEE /* EatNextViewController.m */; };
+		44EF3B75137F42F600E7DEEE /* EatNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44EF3B73137F42F600E7DEEE /* EatNextViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		440D8857137F528200006BBD /* Unit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unit Tests-Prefix.pch"; sourceTree = "<group>"; };
 		440D8858137F528200006BBD /* Unit_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unit_Tests.h; sourceTree = "<group>"; };
 		440D885A137F528200006BBD /* Unit_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unit_Tests.m; sourceTree = "<group>"; };
+		447EFF761383BA66001811E6 /* EatThisWeekDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatThisWeekDataSource.h; sourceTree = "<group>"; };
+		447EFF771383BA66001811E6 /* EatThisWeekDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatThisWeekDataSource.m; sourceTree = "<group>"; };
 		44AFE2B6137F790400A7640E /* AddFoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddFoodViewController.h; path = ../AddFoodViewController.h; sourceTree = "<group>"; };
 		44AFE2B7137F790400A7640E /* AddFoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddFoodViewController.m; path = ../AddFoodViewController.m; sourceTree = "<group>"; };
 		44AFE2B8137F790500A7640E /* AddFoodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddFoodViewController.xib; path = ../AddFoodViewController.xib; sourceTree = "<group>"; };
@@ -44,12 +48,12 @@
 		44EF3B65137F42F600E7DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44EF3B67137F42F600E7DEEE /* Eat Next-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eat Next-Prefix.pch"; sourceTree = "<group>"; };
 		44EF3B68137F42F600E7DEEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		44EF3B6A137F42F600E7DEEE /* Eat_NextAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat_NextAppDelegate.h; sourceTree = "<group>"; };
-		44EF3B6B137F42F600E7DEEE /* Eat_NextAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eat_NextAppDelegate.m; sourceTree = "<group>"; };
+		44EF3B6A137F42F600E7DEEE /* EatNextAppDelegate.h */ = {isa = PBXFileReference; path = EatNextAppDelegate.h; sourceTree = "<group>"; };
+		44EF3B6B137F42F600E7DEEE /* EatNextAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EatNextAppDelegate.m; sourceTree = "<group>"; };
 		44EF3B6E137F42F600E7DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		44EF3B70137F42F600E7DEEE /* Eat_NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eat_NextViewController.h; sourceTree = "<group>"; };
-		44EF3B71137F42F600E7DEEE /* Eat_NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eat_NextViewController.m; sourceTree = "<group>"; };
-		44EF3B74137F42F600E7DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Eat_NextViewController.xib; sourceTree = "<group>"; };
+		44EF3B70137F42F600E7DEEE /* EatNextViewController.h */ = {isa = PBXFileReference; path = EatNextViewController.h; sourceTree = "<group>"; };
+		44EF3B71137F42F600E7DEEE /* EatNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EatNextViewController.m; sourceTree = "<group>"; };
+		44EF3B74137F42F600E7DEEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EatNextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		447EFF701383B850001811E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44AFE2B6137F790400A7640E /* AddFoodViewController.h */,
+				44AFE2B7137F790400A7640E /* AddFoodViewController.m */,
+				44EF3B70137F42F600E7DEEE /* EatNextViewController.h */,
+				44EF3B71137F42F600E7DEEE /* EatNextViewController.m */,
+				44EF3B6A137F42F600E7DEEE /* EatNextAppDelegate.h */,
+				44EF3B6B137F42F600E7DEEE /* EatNextAppDelegate.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		447EFF731383B87E001811E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				447EFF761383BA66001811E6 /* EatThisWeekDataSource.h */,
+				447EFF771383BA66001811E6 /* EatThisWeekDataSource.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		447EFF741383B88A001811E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44AFE2B8137F790500A7640E /* AddFoodViewController.xib */,
+				44EF3B6D137F42F600E7DEEE /* MainWindow.xib */,
+				44EF3B73137F42F600E7DEEE /* EatNextViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		44EF3B4C137F42F600E7DEEE = {
 			isa = PBXGroup;
 			children = (
@@ -128,15 +164,9 @@
 		44EF3B61137F42F600E7DEEE /* Eat Next */ = {
 			isa = PBXGroup;
 			children = (
-				44AFE2B6137F790400A7640E /* AddFoodViewController.h */,
-				44AFE2B7137F790400A7640E /* AddFoodViewController.m */,
-				44AFE2B8137F790500A7640E /* AddFoodViewController.xib */,
-				44EF3B6A137F42F600E7DEEE /* Eat_NextAppDelegate.h */,
-				44EF3B6B137F42F600E7DEEE /* Eat_NextAppDelegate.m */,
-				44EF3B6D137F42F600E7DEEE /* MainWindow.xib */,
-				44EF3B70137F42F600E7DEEE /* Eat_NextViewController.h */,
-				44EF3B71137F42F600E7DEEE /* Eat_NextViewController.m */,
-				44EF3B73137F42F600E7DEEE /* Eat_NextViewController.xib */,
+				447EFF741383B88A001811E6 /* Views */,
+				447EFF731383B87E001811E6 /* Models */,
+				447EFF701383B850001811E6 /* Controllers */,
 				44EF3B62137F42F600E7DEEE /* Supporting Files */,
 			);
 			path = "Eat Next";
@@ -230,7 +260,7 @@
 			files = (
 				44EF3B66137F42F600E7DEEE /* InfoPlist.strings in Resources */,
 				44EF3B6F137F42F600E7DEEE /* MainWindow.xib in Resources */,
-				44EF3B75137F42F600E7DEEE /* Eat_NextViewController.xib in Resources */,
+				44EF3B75137F42F600E7DEEE /* EatNextViewController.xib in Resources */,
 				44AFE2BA137F790500A7640E /* AddFoodViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				440D885B137F528200006BBD /* Unit_Tests.m in Sources */,
+				447EFF791383BA66001811E6 /* EatThisWeekDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44EF3B69137F42F600E7DEEE /* main.m in Sources */,
-				44EF3B6C137F42F600E7DEEE /* Eat_NextAppDelegate.m in Sources */,
-				44EF3B72137F42F600E7DEEE /* Eat_NextViewController.m in Sources */,
+				44EF3B6C137F42F600E7DEEE /* EatNextAppDelegate.m in Sources */,
+				44EF3B72137F42F600E7DEEE /* EatNextViewController.m in Sources */,
 				44AFE2B9137F790500A7640E /* AddFoodViewController.m in Sources */,
+				447EFF781383BA66001811E6 /* EatThisWeekDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,12 +332,12 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		44EF3B73137F42F600E7DEEE /* Eat_NextViewController.xib */ = {
+		44EF3B73137F42F600E7DEEE /* EatNextViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				44EF3B74137F42F600E7DEEE /* en */,
 			);
-			name = Eat_NextViewController.xib;
+			name = EatNextViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
