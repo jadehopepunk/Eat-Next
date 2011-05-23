@@ -15,7 +15,7 @@ dbconfig = YAML::load(File.open('db/config.yml'))
 ActiveRecord::Base.establish_connection(dbconfig['development'])
 
 # Seed with some sensible development data
-require 'lib/development_fixtures'
+# require 'lib/development_fixtures'
 
 # Render Data source output to the console
 data_source = EatThisWeekDataSource.new

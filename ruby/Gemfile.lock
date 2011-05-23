@@ -28,6 +28,7 @@ GEM
     standalone_migrations (0.4.7)
       activerecord
       rake
+    timecop (0.3.4)
     tzinfo (0.3.27)
 
 PLATFORMS
@@ -38,3 +39,4 @@ DEPENDENCIES
   rspec (> 2.0)
   sqlite3
   standalone_migrations
+  timecop

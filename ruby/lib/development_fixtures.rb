@@ -1,3 +1,4 @@
+require 'timecop'
 
 FoodBatch.delete_all
 
@@ -55,5 +56,18 @@ values_set = [
 ]
 values_set.map do |values|
   attributes = Hash[*columns.zip(values).flatten]
-  puts FoodBatch.create!(attributes)
+  (1..12).each do |num|
+    num_date = num.months.ago
+    creation_date = Date.new(num_date.year, num_date.mon, rand(27) + 1)
+    Timecop.freeze(creation_date) do
+      puts FoodBatch.create!(attributes.merge(
+        :consume_within_opening_days => 30, 
+        :use_by => Time.now + 1.year, 
+        :made_on => Date.today,
+        :number_of_packages => rand(3) + 1,
+        :package_size => rand * 1000.0,
+        :package_size_units => 'kg'
+      ))
+    end
+  end
 end
