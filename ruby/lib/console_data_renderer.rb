@@ -5,6 +5,6 @@ class ConsoleDataRenderer
   
   def render
     data = @data_source.all_rows
-    puts data.inspect
+    puts data.map(&:to_s).join("\n")
   end
 end

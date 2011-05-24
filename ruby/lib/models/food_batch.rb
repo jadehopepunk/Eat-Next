@@ -1,8 +1,21 @@
 class FoodBatch < ActiveRecord::Base
   belongs_to :food_category
+  belongs_to :food_batch_group
+  
+  scope :unexpired, lambda {
+    where("use_by <= ?", Date.today)
+  }
   
   def category_name=(value)
     self.food_category = value.blank? ? nil : FoodCategory.find_or_create_by_name(value)
+  end
+  
+  def category_name
+    food_category.name if food_category
+  end
+  
+  def to_s
+    [category_name, '-', name, variety_name].reject(&:blank?).join(' ')
   end
 end
 

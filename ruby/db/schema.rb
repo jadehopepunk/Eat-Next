@@ -10,19 +10,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110523083423) do
+ActiveRecord::Schema.define(:version => 20110524074241) do
+
+  create_table "food_batch_groups", :force => true do |t|
+  end
 
   create_table "food_batches", :force => true do |t|
     t.string   "name"
     t.string   "variety_name"
     t.integer  "food_category_id"
+    t.integer  "food_batch_group_id"
     t.integer  "number_of_packages"
     t.decimal  "package_size"
     t.string   "package_size_units"
     t.date     "made_on"
     t.date     "use_by"
-    t.boolean  "use_in_one_go",               :default => false
-    t.integer  "consume_within_opening_days"
+    t.boolean  "use_in_one_go",       :default => false
+    t.decimal  "minimum_consumption"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
