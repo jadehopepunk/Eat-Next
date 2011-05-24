@@ -8,6 +8,7 @@ require 'active_record'
 require 'yaml'
 
 require 'lib/models/food_category'
+require 'lib/models/food_batch_group'
 require 'lib/models/food_batch'
 
 # Connect to Database

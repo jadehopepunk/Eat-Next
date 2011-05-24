@@ -1,3 +1,4 @@
+
 class FoodBatchGrouper
   class << self
     GROUP_FIELDS = %w(food_category_id name variety_name package_size_units)
@@ -13,13 +14,19 @@ class FoodBatchGrouper
     def build_group_for_batch(batch)
       build_group_for_batches(batches_groupable_with(batch))
     end
+
+    private
+      def build_group_for_batches(batches)
+        batches.map(&:food_batch_group).compact.uniq.map(&:destroy)
+        group = FoodBatchGroup.create!
+        batches.each do |batch|
+          batch.food_batch_group = group
+          batch.save!
+        end
+      end
     
-    def build_group_for_batches(batches)
-      puts "Group #{batches.map(&:id).inspect}"
-    end
-    
-    def batches_groupable_with(batch)
-      FoodBatch.where(batch.attributes.reject {|key, value| !GROUP_FIELDS.include?(key)})
-    end
+      def batches_groupable_with(batch)
+        FoodBatch.where(batch.attributes.reject {|key, value| !GROUP_FIELDS.include?(key)}).all
+      end
   end
 end
