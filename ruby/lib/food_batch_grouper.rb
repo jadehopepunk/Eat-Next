@@ -1,8 +1,8 @@
 
 class FoodBatchGrouper
+  GROUP_FIELDS = %w(food_category_id name variety_name package_size_units)
+
   class << self
-    GROUP_FIELDS = %w(food_category_id name variety_name package_size_units)
-    
     def build_all_batch_groups
       result = ActiveRecord::Base.connection.select_values "SELECT id FROM food_batches GROUP BY #{GROUP_FIELDS.join(', ')}"
       result.each do |batch_id|
