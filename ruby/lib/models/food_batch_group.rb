@@ -12,7 +12,7 @@ class FoodBatchGroup < ActiveRecord::Base
       batch = food_batches.first
       if batch.expired?
       else
-        weeks_to_eat = DateHelpers.calendar_weeks_until(batch.use_by)
+        weeks_to_eat = DateHelpers.calendar_weeks_between(Date.today, batch.use_by)
         batch.amount / weeks_to_eat
       end
     end
