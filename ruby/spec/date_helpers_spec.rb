@@ -10,8 +10,8 @@ describe DateHelpers do
       DateHelpers.calendar_weeks_between(Date.new(2011, 5, 22), Date.new(2011, 5, 23)).should == 2
     end
 
-    it "should return 7 if start and end are 7 weeks apart" do
-      DateHelpers.calendar_weeks_between(Date.new(2011, 5, 22), Date.new(2011, 5, 22) + 7.weeks).should == 7
+    it "should return 7 if start and span seven weeks" do
+      DateHelpers.calendar_weeks_between(Date.new(2011, 5, 22), Date.new(2011, 5, 22) + 6.weeks).should == 7
     end
 
   end

@@ -7,6 +7,7 @@ require 'active_record'
 require 'yaml'
 
 require 'lib/date_helpers'
+require 'lib/calendar_week_range'
 
 # Connect to Database
 dbconfig = YAML::load(File.open('db/config.yml'))

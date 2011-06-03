@@ -5,13 +5,13 @@ module DateHelpers
       return 1 if days_between_weeks == 0
       ((days_between_weeks + 1).to_f / 7.0).ceil
     end
-  
+
+    def start_of_week(date)
+      date.to_date - day_of_week(date)
+    end
+      
     private
     
-      def start_of_week(date)
-        date.to_date - day_of_week(date)
-      end
-      
       def day_of_week(date)
         date.wday == 0 ? 7 : date.wday - 1
       end
